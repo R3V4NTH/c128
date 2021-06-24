@@ -37,8 +37,8 @@ def scrape(url):
     
         Star_names.append(temp_list[i][0])
         Distance.append(temp_list[i][5])
-        Mass.append(temp_list[i][7])
-        Radius.append(temp_list[i][8])
+        Mass.append(temp_list[i][8])
+        Radius.append(temp_list[i][9])
 
     df2 = pd.DataFrame(list(zip(Star_names,Distance,Mass,Radius,)),columns=['Star_name','Distance','Mass','Radius'])
 
